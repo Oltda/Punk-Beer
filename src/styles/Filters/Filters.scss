@@ -1,0 +1,195 @@
+@import  "../Shared/Variables.scss";
+
+.filters{
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    width:60%;
+    margin:auto;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    p{
+      text-align: left;
+    }
+}
+
+
+.findByNameContainer{
+  position: relative;
+
+
+    input{
+     
+      height:40px;
+      border-radius: 10px;
+      text-indent: 40px;
+      font-size: 20px;
+      
+    }
+}
+::placeholder{
+  color:rgb(177, 167, 167);
+  font-size: 20px;
+}
+
+.searchIconCont{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  padding:2px;
+}
+
+.searchIcon{
+  width: 40px;
+  color:rgb(177, 167, 167); 
+}
+
+.dateContainer{
+
+  input{
+    font-size: 20px;
+    height: 40px;
+    border-radius:10px;
+    color:rgb(177, 167, 167); 
+  }
+}
+
+
+
+.slidecontainer {
+    width: 40%; 
+    color:white;
+  }
+
+  .sliderWrap{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  
+  }
+  
+  .slider {
+   
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 10px;
+    background: rgb(32,36,0);
+    background: linear-gradient(266deg, rgba(32,36,0,1) 2%, rgba(242,201,28,1) 89%);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-right: 30px;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+    background: $beerBottleGreen;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background:  $beerBottleGreen;
+    cursor: pointer;
+  }
+
+
+
+  @media only screen and (max-width: 600px ) {
+    .filters{
+      margin-top: 100px;
+      width: 90%;
+      display: block;
+
+    }
+    .findByNameContainer{
+      display: block;
+      width: 100%;
+      input{
+        width: 100%;
+      } 
+    }
+
+    .dateContainer{
+      display: block;
+      width: 100%;
+      input{
+        width:100%;
+      }
+    }
+
+    .slidecontainer{
+      width: 100%;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+
+    .filters{
+      width: 90%;
+
+      display: block;
+   
+    }
+
+    .findByNameContainer{
+      display: inline-block;
+      width: 50%;
+      input{
+        width: 80%;
+      }
+    }
+
+    .dateContainer{
+      display: inline-block;
+      width: 50%;
+      input{
+        width: 100%;
+      }
+    }
+
+    .slidecontainer{
+      width:50%;
+    }
+  
+  }
+
+  @media only screen and (min-width: 992px) {
+    .wrapAllBeers{
+        width: 60%;
+    }
+    .filters{
+      width: 70%;
+      display: flex;
+    }
+    .findByNameContainer{
+      width:30%;
+      position: relative;
+      
+    }
+
+    .dateContainer{
+      width:30%;
+    }
+    
+
+    .slidecontainer{
+      width:30%;
+    }
+
+
+  }

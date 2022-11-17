@@ -1,0 +1,18 @@
+.food-wrap {
+  width: 90%;
+}
+.food-wrap h1 {
+  color: #B94668;
+}
+
+.food-pairing-wrap {
+  margin-bottom: 50px;
+}
+
+.food-item {
+  margin-bottom: 10px;
+  color: rgb(137, 132, 132);
+  font-size: 15px;
+  position: relative;
+  text-align: center;
+}/*# sourceMappingURL=Food.css.map */

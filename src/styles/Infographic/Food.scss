@@ -1,0 +1,62 @@
+@import "../../styles/Shared/variables.scss";
+
+.food-wrap{
+   width: 90%;
+
+
+    h1{
+        color: $foodColor;
+    }
+}
+
+
+.food-pairing-wrap{
+  margin-bottom: 50px;
+}
+
+.food-item{
+  
+
+    margin-bottom: 10px;
+    // height: 60px;
+
+    @include infographicFont();
+
+//    padding-left: 40px;
+//    padding-right: 40px;
+    position: relative;
+    text-align: center;
+}
+
+
+
+// .list-arrow{
+//     width: 0; 
+//     height: 0; 
+//     border-top: 30px solid transparent;
+//     border-bottom: 30px solid transparent;
+    
+//     border-right: 30px solid white;
+//     position: absolute;
+//     right: 0px;
+// }
+
+// .list-arrow-left{
+//     width: 0; 
+//     height: 0; 
+//     border-top: 30px solid transparent;
+//     border-bottom: 30px solid transparent;
+    
+//     border-right: 30px solid #B946A0;
+//     position: absolute;
+//     left: -30px;
+
+// }
+
+@media only screen and (max-width: 600px ) {
+    .food-item{
+        // padding-left: 10px;
+        // padding-right: 10px;
+    }
+
+}

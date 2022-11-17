@@ -1,0 +1,8 @@
+.description-wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.description-wrap p {
+  color: rgb(137, 132, 132);
+}/*# sourceMappingURL=Description.css.map */

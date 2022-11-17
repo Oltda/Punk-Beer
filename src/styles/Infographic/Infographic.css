@@ -1,0 +1,194 @@
+.infographic-wrap {
+  width: 100%;
+  min-height: 200px;
+  background-color: white;
+  border-radius: 30px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 20% 55% 25%;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.info-column {
+  text-align: center;
+}
+
+.second {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.third {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 70%;
+}
+
+.food {
+  background-color: #B94668;
+}
+
+.description {
+  background-color: #5E46B9;
+}
+
+.hops {
+  background-color: #A1B946;
+}
+
+.malt {
+  background-color: #46B997;
+}
+
+.food-caption {
+  color: #B94668;
+}
+
+.description-caption {
+  color: #5E46B9;
+}
+
+.hops-caption {
+  color: #A1B946;
+}
+
+.malt-caption {
+  color: #46B997;
+}
+
+.icon {
+  width: 50%;
+  color: white;
+}
+
+.info-arrow {
+  width: 30px;
+  margin: auto;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+}
+
+.food-arrow {
+  border-top: 60px solid #B94668;
+}
+
+.description-arrow {
+  border-top: 60px solid #5E46B9;
+}
+
+.hops-arrow {
+  border-top: 60px solid #A1B946;
+}
+
+.malt-arrow {
+  border-top: 60px solid #46B997;
+}
+
+.food-number {
+  color: #B94668;
+}
+
+.description-number {
+  color: #5E46B9;
+}
+
+.hops-number {
+  color: #A1B946;
+}
+
+.malt-number {
+  color: #46B997;
+}
+
+.info-number {
+  width: 100%;
+  height: 50%;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.list-items-wrap {
+  width: 70%;
+}
+.list-items-wrap h1 {
+  text-align: center;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  width: 100%;
+  color: rgb(137, 132, 132);
+  font-size: 15px;
+}
+
+.left {
+  width: 70%;
+  text-align: left;
+}
+
+.malt-caption {
+  color: #46B997;
+}
+
+.hops-caption {
+  color: #A1B946;
+}
+
+@media only screen and (max-width: 600px) {
+  .info-arrow {
+    width: 20px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+  }
+  .food-arrow {
+    border-top: 40px solid #B94668;
+  }
+  .description-arrow {
+    border-top: 40px solid #5E46B9;
+  }
+  .hops-arrow {
+    border-top: 40px solid #A1B946;
+  }
+  .malt-arrow {
+    border-top: 40px solid #46B997;
+  }
+  .info-number {
+    font-size: 40px;
+  }
+  .list-items-wrap {
+    width: 100%;
+  }
+  .first {
+    display: none;
+  }
+  .infographic-wrap {
+    grid-template-columns: 70% 30%;
+  }
+  .icon {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .icon {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 600px) and (min-width: 992px) {
+  .icon {
+    width: 50%;
+  }
+}/*# sourceMappingURL=Infographic.css.map */

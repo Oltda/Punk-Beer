@@ -1,0 +1,36 @@
+@import  "../Shared/Variables.scss";
+
+.header{
+    height: 150px;
+    position: relative;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    
+}
+
+.headerImgWrap{
+    height: 100%;
+    width: 70%;
+    // border: 1px solid red;
+    // background-image: url("/src/images/headerPattern.png")
+}
+
+.headerImg{
+   position: relative;
+    // width: 80%;
+}
+
+.rightImg{
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .header{
+        height: 100px;
+    }
+
+}

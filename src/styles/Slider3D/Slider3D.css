@@ -1,0 +1,128 @@
+.arrow {
+  background-color: transparent;
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrowIcon {
+  width: 50px;
+  height: 50px;
+  pointer-events: auto;
+}
+
+.arrow svg {
+  transition: color 300ms;
+}
+
+.next {
+  right: 0%;
+  top: 50%;
+}
+
+.prev {
+  left: 0%;
+  top: 50%;
+}
+
+.slider-cont {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 15%;
+  width: 60%;
+  min-width: 350px;
+  position: relative;
+}
+
+.sliderCaption {
+  position: absolute;
+  text-align: center;
+  font-size: 60px;
+  width: 100%;
+  z-index: 5;
+  font-weight: 100;
+  font-family: "Brush Script MT", cursive;
+  top: 100%;
+  color: white;
+  color: #fff;
+  -webkit-animation: flicker 3.5s infinite alternate;
+          animation: flicker 3.5s infinite alternate;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 100px #0fa;
+}
+@-webkit-keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa, 0 0 80px #0fa, 0 0 90px #0fa, 0 0 100px #0fa, 0 0 150px #0fa;
+  }
+  24%, 55% {
+    text-shadow: none;
+  }
+}
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa, 0 0 80px #0fa, 0 0 90px #0fa, 0 0 100px #0fa, 0 0 150px #0fa;
+  }
+  24%, 55% {
+    text-shadow: none;
+  }
+}
+
+.sld {
+  pointer-events: none;
+}
+
+.slide {
+  transform: scale(0.5);
+  height: 20%;
+  transition: transform 300ms;
+  opacity: 1;
+}
+.slide img {
+  width: 50% !important;
+}
+
+.activeSlide {
+  transform: scale(1);
+  position: relative;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .slide img {
+    width: 100px;
+    margin: 0 auto;
+  }
+  .arrowIcon {
+    width: 20px;
+    height: 20px;
+  }
+  .sliderCaption {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .slide img {
+    width: 250px;
+    margin: 0 auto;
+  }
+  .arrowIcon {
+    width: 20px;
+    height: 20px;
+  }
+  .sliderCaption {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .slide img {
+    width: 350px;
+    margin: 0 auto;
+  }
+  .arrowIcon {
+    width: 50px;
+    height: 50px;
+  }
+  .sliderCaption {
+    font-size: 60px;
+  }
+}/*# sourceMappingURL=Slider3D.css.map */

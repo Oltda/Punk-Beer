@@ -1,0 +1,28 @@
+.header {
+  height: 150px;
+  position: relative;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.headerImgWrap {
+  height: 100%;
+  width: 70%;
+}
+
+.headerImg {
+  position: relative;
+}
+
+.rightImg {
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    height: 100px;
+  }
+}/*# sourceMappingURL=Header.css.map */
